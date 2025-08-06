@@ -1,0 +1,46 @@
+      return "Percy Jackson e o Ladrão de Raios";
+    } else if (gostaDeFantasia) {
+      return "As Crônicas de Nárnia: O Leão, a Feiticeira e o Guarda-Roupa";
+    } else if (gostaDeAventura) {
+      return "Jumanji: Bem-Vindo à Selva";
+    } else {
+      return "O Menino que Descobriu o Vento";
+    }
+  } else if (idade >= 10) {
+    if (gostaDeFantasia && gostaDeAventura) {
+      return "Harry Potter e a Câmara Secreta";
+    } else if (gostaDeFantasia) {
+      return "A Viagem de Chihiro";
+    } else if (gostaDeAventura) {
+      return "Como Treinar o Seu Dragão";
+    } else {
+      return "A Era do Gelo";
+    }
+  } else {
+    if (gostaDeFantasia) {
+      return "Toy Story";
+    } else if (gostaDeAventura) {
+      return "O Rei Leão";
+    } else {
+      return "Procurando Nemo";
+    }
+  }
+}
+
+function styleInterface() {
+  // Estilizando o campo de idade
+  campoIdade.style('font-size', '16px');
+  campoIdade.style('padding', '8px');
+  campoIdade.style('border-radius', '4px');
+  campoIdade.style('border', '1px solid #dcdcdc');
+  
+  // Estilizando os checkboxes
+  campoFantasia.style('margin', '10px');
+  campoAventura.style('margin', '10px');
+  
+  // Ajustando a cor e o estilo do título
+  select("h2").style('color', '#2d2d2d');
+  select("h2").style('font-family', 'Arial, sans-serif');
+  select("h2").style('text-align', 'center');
+}
+
