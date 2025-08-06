@@ -1,46 +1,50 @@
-      return "Percy Jackson e o Ladrão de Raios";
-    } else if (gostaDeFantasia) {
-      return "As Crônicas de Nárnia: O Leão, a Feiticeira e o Guarda-Roupa";
-    } else if (gostaDeAventura) {
-      return "Jumanji: Bem-Vindo à Selva";
-    } else {
-      return "O Menino que Descobriu o Vento";
-    }
-  } else if (idade >= 10) {
-    if (gostaDeFantasia && gostaDeAventura) {
-      return "Harry Potter e a Câmara Secreta";
-    } else if (gostaDeFantasia) {
-      return "A Viagem de Chihiro";
-    } else if (gostaDeAventura) {
-      return "Como Treinar o Seu Dragão";
-    } else {
-      return "A Era do Gelo";
-    }
-  } else {
-    if (gostaDeFantasia) {
-      return "Toy Story";
-    } else if (gostaDeAventura) {
-      return "O Rei Leão";
-    } else {
-      return "Procurando Nemo";
-    }
-  }
-}
-
-function styleInterface() {
-  // Estilizando o campo de idade
-  campoIdade.style('font-size', '16px');
-  campoIdade.style('padding', '8px');
-  campoIdade.style('border-radius', '4px');
-  campoIdade.style('border', '1px solid #dcdcdc');
-  
-  // Estilizando os checkboxes
-  campoFantasia.style('margin', '10px');
-  campoAventura.style('margin', '10px');
-  
-  // Ajustando a cor e o estilo do título
-  select("h2").style('color', '#2d2d2d');
-  select("h2").style('font-family', 'Arial, sans-serif');
-  select("h2").style('text-align', 'center');
-}
-
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AluraFlix</title>
+<link rel="stylesheet" href="style.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link
+href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;700&display=swa
+p" rel="stylesheet">
+</head>
+<body>
+<header>ALURAFLIX</header>
+<section>
+<div class="container">
+<div class="titulo">
+<h1>Coach Carter - Treino para a Vida</h1>
+</div>
+<div class="video-borda">
+<iframe width="400" height="225"
+src="https://www.youtube.com/embed/jMvJwx3an2Y?si=n8CGubhRdKpYi6u9"
+title="YouTube video player" frameborder="0"
+allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope;
+picture-in-picture; web-share"
+referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</div>
+</div>
+<section>
+<section>
+<h2>Filmes Motivacionais</h2>
+<div class="categoria-videos">
+<a href="https://youtu.be/UlY2deWLyw0">
+<img src="https://img.youtube.com/vi/UlY2deWLyw0/maxresdefault.jpg" />
+</a>
+<a href="https://youtu.be/kgJwc4qX0VY">
+<img src="https://img.youtube.com/vi/kgJwc4qX0VY/maxresdefault.jpg" />
+</a>
+<a href="https://youtu.be/z3ykxbzQ3Dc">
+<img src="https://img.youtube.com/vi/QCnXwxvA3ZY/maxresdefault.jpg" />
+</a>
+<a href="https://youtu.be/Azxbti9nPj4">
+<img src="https://img.youtube.com/vi/34fKX_ChCPk/maxresdefault.jpg" />
+</a>
+</div>
+</section>
+<p>#Todos nascemos para brilhar</p>
+</body>
+</html>
